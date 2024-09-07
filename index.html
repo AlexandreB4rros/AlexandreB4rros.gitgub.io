@@ -17,20 +17,42 @@
         p {
             color: #555;
         }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
-    <h1>Finder Planilha</h1>
-    <h1> - Oque é, para que serve ?</h1>
-    <p>Ferramenta cujo o intuito seja criar planilhas voltado a redes de fibra óptica, realizar upload usando o drive.</p>
-    <h1> - Permissões do Aplicativo:</h1>
+    <h1>Permissões do Aplicativo</h1>
     <p>Nosso aplicativo requer as seguintes permissões para funcionar corretamente:</p>
     <ul>
+        <li><strong>Acesso à câmera:</strong> Para tirar fotos e gravar vídeos.</li>
+        <li><strong>Acesso ao microfone:</strong> Para gravar áudio.</li>
         <li><strong>Acesso ao armazenamento:</strong> Para salvar e carregar arquivos.</li>
         <li><strong>Acesso à localização:</strong> Para fornecer serviços baseados em localização.</li>
-        <li><strong>Acesso à data:</strong> Para fornecer serviços baseados em data.</li>
-        <li><strong>Acesso à hora:</strong> Para fornecer serviços baseados em hora.</li>
     </ul>
     <p>Essas permissões são necessárias para garantir que você tenha a melhor experiência possível com nosso aplicativo. Agradecemos sua compreensão e confiança.</p>
+    <a href="https://accounts.google.com/o/oauth2/auth?client_id=SEU_CLIENT_ID&redirect_uri=SEU_REDIRECT_URI&response_type=code&scope=https://www.googleapis.com/auth/drive">
+        <button>Autorizar Google Drive</button>
+    </a>
 </body>
 </html>
